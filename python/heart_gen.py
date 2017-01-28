@@ -1,20 +1,31 @@
 ## Code to generate Heart risk factors with weighted risks as shown below
 '''
-Attribute: Risk Factor
+Attribute: Data
 
-Age: <30=1, >30=8
-Smoking: Never=1, Past=3, Current=6
-Overweight: No=1, Yes=8
-Alcoholic: Never=1, Past=3, Current=6
-High salt intake: No=1, Yes=9
-High saturated diet: No=1, Yes=9
-Exercise: Reg=1, Never=6
-Lifestyle: Active=1, Inactive=7
-Hereditary?: No=1, Yes=9
-Bad Cholestrol: Normal=1, High=8
-Blood Pressure: normal=1, low=8, high=9
-Blood Sugar: normal=1, low=4, high=5
-Heart Rate: normal=1, low=9, high=9
+Age: Range(20,50)
+Gender: Male, Female
+Weight: Range(30,200)
+Height: Range(130,220)
+Smoking: Yes, No
+Alcoholic: Yes, No
+---Location---
+State
+City
+--------------
+Literacy Rate: Range(0.0,1.0)
+Mortality Rate: Range(0.0,1.0)
+Avg Stress Rate: Range(0.0,1.0)
+Air Pollution Index: Range(0,550)
+----Profession----
+Lifestyle: Inactive, Active, Mediocre
+Travelling Distance: Range(0, 100)
+Mode of Commute: Public Transport, Car, Bike
+Exercise: Daily, Weekly, Monthly, Rare
+Go for outside food/week: Regularly, Occassionaly, Rarely
+Entertainment (Movies, outings): Regularly, Occassionaly, Rarely
+Marital Status: Single, Married
+Kids: Range(0,4)
+Hometown: {Location}
 '''
 
 from enum import Enum
